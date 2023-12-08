@@ -269,6 +269,23 @@ header .navigation {
 .boxInfo img {
   width: 25%;
 }
+.boxInfo .icon{
+  background-color: var(--bgorage--);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.boxInfo i{
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+}
 
 #btnSlideInfoFinal,
 #btnSlideInfoInicio {
@@ -278,6 +295,6 @@ header .navigation {
   height: 40px;
   border-radius: 50%;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }

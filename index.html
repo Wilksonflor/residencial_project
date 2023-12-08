@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
-      href="./residencial_project//src/img/favicon.ico"
+      href="src/img/favicon.ico"
       type="image/x-icon"
     />
     <script
       src="https://kit.fontawesome.com/e0d4a81d6c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js" defer></script>
     <title>Condomínio Residencial - Sua vida brilha mais aqui</title>
   </head>
   <body>
@@ -88,7 +89,7 @@
 
             <div class="contentSlideInfo">
               <div class="containerBoxInfo">
-                <button id="btnSlideInfoInicio">
+                <button id="btnSlideInfoInicio" onclick="prevSlide()">
                   <i class="fa-solid fa-arrow-left"></i>
                 </button>
 
@@ -117,13 +118,48 @@
                 </div>
 
                 <div class="boxInfo">
-                  <img
-                    src="/residencial_project/src/img/segurança.png"
-                    alt="Icone de ambiente seguro"
-                  />
-                  <p>Totalmente seguro</p>
+                  <div class="icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                  </div>
+                  <p>Academia inovadora</p>
                 </div>
-                <button id="btnSlideInfoFinal">
+
+                <div class="boxInfo">
+                  <div class="icon">
+                    <i class="fa-solid fa-person-swimming"></i>
+                  </div>
+                  <p>Óasis Áquatico</p>
+                </div>
+
+                <div class="boxInfo">
+                  <div class="icon">
+                    <i class="fa-solid fa-wheelchair"></i>
+                  </div>
+                  <p>Acessibidade em todo condomínio</p>
+                </div>
+
+                <div class="boxInfo">
+                  <div class="icon">
+                    <i class="fa-regular fa-calendar-check"></i>
+                  </div>
+                  <p>Check In facilitado</p>
+                </div>
+
+                <div class="boxInfo">
+                  <div class="icon">
+                    <i class="fa-regular fa-money-bill-1"></i>
+                  </div>
+                  <p>Preços acessíveis</p>
+                </div>
+
+                <div class="boxInfo">
+                  <div class="icon">
+                    <i class="fa-solid fa-paw"></i>
+                  </div>
+                  <p>Aceitamos o seu Pet</p>
+                </div>
+
+                <button id="btnSlideInfoFinal" onclick="nextSlide()">
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -141,6 +177,7 @@
                   alt=""
                 />
               </div>
+
               <div class="boxImgSpoiler">
                 <img
                   src="/residencial_project/src/img/Rectangle 21.png"
