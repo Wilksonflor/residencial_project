@@ -223,7 +223,7 @@ header .navigation {
 .containerSlides h2 {
   font-size: clamp(2rem, 2vw, 3rem);
   font-family: var(--fontspace--);
-  width: 25%;
+  width: 23%;
   text-align: center;
 }
 
