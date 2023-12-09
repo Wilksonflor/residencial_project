@@ -22,3 +22,44 @@ function nextSlide() {
 }
 console.log(slides)
 showSlide();
+
+// Slide do Spoiler
+
+let currentSlideSpoiler = 0;
+const slidesSpoiler = document.querySelectorAll('.boxImgSpoiler');
+const itemsToShowSpoiler = 4;
+let intervalId;
+
+function showSlideSpoiler() {
+  slidesSpoiler.forEach((slide, i) => {
+    const isVisible = i >= currentSlideSpoiler && i < currentSlideSpoiler + itemsToShowSpoiler;
+    slide.style.display = isVisible ? 'flex' : 'none';
+  });
+}
+
+function nextSlideSpoiler() {
+  currentSlideSpoiler = (currentSlideSpoiler + 1) % (slidesSpoiler.length - itemsToShowSpoiler + 1);
+  showSlideSpoiler();
+}
+
+function prevSlideSpoiler() {
+  currentSlideSpoiler =
+    (currentSlideSpoiler - 1 + (slidesSpoiler.length - itemsToShowSpoiler + 1)) %
+    (slidesSpoiler.length - itemsToShowSpoiler + 1);
+  showSlideSpoiler();
+}
+
+function startAutoSlide() {
+  intervalId = setInterval(() => {
+    nextSlideSpoiler();
+  }, 3000); 
+}
+
+function stopAutoSlide() {
+  clearInterval(intervalId);
+}
+
+showSlideSpoiler();
+startAutoSlide();
+
+// Depoimentos

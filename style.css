@@ -263,13 +263,21 @@ header .navigation {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
+  padding: 10px;
   /* line-height: 120%; */
+}
+
+.boxInfo i {
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
 }
 
 .boxInfo img {
   width: 25%;
 }
-.boxInfo .icon{
+
+.boxInfo .icon {
   background-color: var(--bgorage--);
   border-radius: 50%;
   width: 50px;
@@ -280,15 +288,8 @@ header .navigation {
   justify-content: center;
 }
 
-
-.boxInfo i{
-  color: #fff;
-  font-size: 1.5rem;
-  border: none;
-}
-
-#btnSlideInfoFinal,
-#btnSlideInfoInicio {
+.btnSlideInfoFinal,
+.btnSlideInfoInicio {
   background-color: var(--bgorage--);
   border: none;
   width: 50px;
@@ -298,3 +299,121 @@ header .navigation {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+.slideSpoiler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.slideSpoiler h2 {
+  width: 30%;
+  margin-block: 30px;
+}
+
+.containerSlideSpoiler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.boxImgSpoiler {
+  padding: 5px;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.boxImgSpoiler img {
+  width: 100%;
+  min-width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 150px;
+  background-color: var(--bggreen--);
+  color: #fff;
+}
+
+.textDepoimentos {
+  width: 55%;
+  margin-block: 50px;
+  margin-left: 50px;
+  font-family: var(--fontInter--);
+  font-weight: 500;
+  /* line-height: 150%; */
+}
+
+.depoimentos h2 {
+  font-family: var(--fontspace--);
+  font-size: clamp(2rem, 2vw, 3rem);
+  margin-top: 100px;
+}
+
+.depoimentos .textClientes {
+  width: 50%;
+  margin-top: 20px;
+
+  font-family: var(--fontInter--);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.containerDepoimentos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.depoimentos .function {
+  font-style: italic;
+}
+
+.boxDepoimentos {
+  display: flex;
+  width: 100%;
+  max-width: 384px;
+  padding: 40px 30px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+
+  background: #f7f7f7;
+  color: #000;
+}
+
+.boxDepoimentos p {
+  font-family: var(--fontInter--);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #0e3e29;
+  /* margin-block: 40px; */
+}
+.boxDepoimentos img {
+  margin-block: 20px;
+}
+.boxDepoimentos h3 {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-family: var(--fontspace--);
+}
+
+/* section do formulario e mapa */
