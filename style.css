@@ -27,7 +27,13 @@ header .navigation {
   align-items: center;
   justify-content: space-around;
 }
-
+.mobile {
+  display: none;
+  border: solid red;
+}
+#btnMobile {
+  display: none;
+}
 .navigation a {
   position: relative;
   text-decoration: none;
@@ -347,7 +353,7 @@ header .navigation {
 }
 
 .textDepoimentos {
-  width: 55%;
+  width: 50%;
   margin-block: 50px;
   margin-left: 50px;
   font-family: var(--fontInter--);
@@ -417,3 +423,65 @@ header .navigation {
 }
 
 /* section do formulario e mapa */
+.formAndMap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid black;
+  margin-top: 150px;
+}
+
+.formAndMap h2 {
+  color: #000;
+  font-family: var(--fontspace--);
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.formAndMap p {
+  font-family: var(--fontInter--);
+  font-size: 1;
+  margin-top: 15px;
+}
+
+.containerForm {
+  width: 50%;
+  border: solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerForm form {
+  /* width: 30%; */
+  border: solid yellow;
+}
+
+.input-container {
+  border: solid red;
+}
+
+.map {
+  border: solid var(--bggreen--);
+  width: 30%;
+}
+
+/* Responsivo */
+@media only screen and (max-width: 320px) {
+  #btnMobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (max-width: 320px) {
+}

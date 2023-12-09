@@ -23,7 +23,20 @@
         alt="Logo do residencial"
       />
 
-      <nav class="navigation">
+      <nav class="navigation desktop">
+        <a href="#">Quem somos</a>
+        <a href="#">Diferenciais</a>
+        <a href="#">Espaços</a>
+        <a href="#">Clientes</a>
+        <a href="#">Localização</a>
+        <button>Quero uma oferta</button>
+      </nav>
+
+      <button id="btnMobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="mobile">
         <a href="#">Quem somos</a>
         <a href="#">Diferenciais</a>
         <a href="#">Espaços</a>
@@ -301,6 +314,7 @@
               Caso você tenha alguma dúvida, sugestão, feedback ou queira fazer
               uma oferta conosco, essa é a seção adequada para fazê-lo.
             </p>
+
             <form action="">
               <div class="input-container">
                 <label for="myInput" class="input-label">Nome</label>
@@ -318,10 +332,14 @@
                 <select name="" id="">
                   <option value="">Selecione</option>
                   <option value="Agendamento">Agendamento</option>
+                  <option value="Agendamento">Orçamento</option>
+                  <option value="Agendamento">Localização</option>
+                  <option value="Agendamento">Outro</option>
                 </select>
               </div>
-              <button type="submit">Enviar</button>
+              <button type="submit" id="btnEnviar">Enviar</button>
             </form>
+
             <div class="contatoFooter">
               <div class="contentFooter">
                 <i class="fa-brands fa-whatsapp"></i>
