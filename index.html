@@ -36,13 +36,15 @@
         <i class="fa-solid fa-bars"></i>
       </button>
 
-      <nav class="mobile">
-        <a href="#">Quem somos</a>
-        <a href="#">Diferenciais</a>
-        <a href="#">Espaços</a>
-        <a href="#">Clientes</a>
-        <a href="#">Localização</a>
-        <button>Quero uma oferta</button>
+      <nav class="navigation mobile">
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Diferenciais</a></li>
+          <li><a href="#">Espaços</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Localização</a></li>
+          <button>Quero uma oferta</button>
+        </ul>
       </nav>
     </header>
 
@@ -259,12 +261,24 @@
       </section>
 
       <section class="depoimentos">
-        <div class="textDepoimentos">
-          <h2>Depoimentos</h2>
-          <p class="textClientes">
-            Nossos clientes falam por nós! Confira suas experiências e
-            depoimentos que destacam a qualidade e o sucesso de nossos serviços.
-          </p>
+        <div class="containerDepo">
+          <div class="textDepoimentos">
+            <h2>Depoimentos</h2>
+            <p class="textClientes">
+              Nossos clientes falam por nós! Confira suas experiências e
+              depoimentos que destacam a qualidade e o sucesso de nossos
+              serviços.
+            </p>
+          </div>
+
+          <div class="inputControlDepoimentos">
+            <button class="btnDepoimento" onclick="prevDepoimento()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="btnDepoimento" onclick="nextDepoimento()">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
         </div>
 
         <div class="containerDepoimentos">
@@ -303,6 +317,76 @@
             <h3>Hayssa Silva</h3>
             <p class="function">Cliente</p>
           </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “A qualidade do serviço prestado superou minhas expectativas. A
+              equipe é profissional e atenciosa, e os resultados são evidentes.
+              Recomendo a todos que procuram excelência e comprometimento.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Ana Oliveira</h3>
+            <p class="function">Cliente Satisfeita</p>
+          </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “A atmosfera do local é única. Cada detalhe foi pensado para
+              proporcionar conforto e bem-estar. Estou encantado com a qualidade
+              do serviço e a atenção da equipe.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Maria Silva</h3>
+            <p class="function">Residente</p>
+          </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “Morar neste condomínio é uma experiência incrível. A equipe é
+              sempre prestativa, as áreas comuns são bem cuidadas, e a sensação
+              de segurança é primordial. Estamos felizes por fazer parte dessa
+              comunidade acolhedora e organizada.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Hayssa Silva</h3>
+            <p class="function">Cliente</p>
+          </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “Morar neste condomínio é uma experiência incrível. A equipe é
+              sempre prestativa, as áreas comuns são bem cuidadas, e a sensação
+              de segurança é primordial. Estamos felizes por fazer parte dessa
+              comunidade acolhedora e organizada.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Hayssa Silva</h3>
+            <p class="function">Cliente</p>
+          </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “Morar neste condomínio é uma experiência incrível. A equipe é
+              sempre prestativa, as áreas comuns são bem cuidadas, e a sensação
+              de segurança é primordial. Estamos felizes por fazer parte dessa
+              comunidade acolhedora e organizada.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Hayssa Silva</h3>
+            <p class="function">Cliente</p>
+          </div>
+
+          <div class="boxDepoimentos">
+            <p>
+              “Morar neste condomínio é uma experiência incrível. A equipe é
+              sempre prestativa, as áreas comuns são bem cuidadas, e a sensação
+              de segurança é primordial. Estamos felizes por fazer parte dessa
+              comunidade acolhedora e organizada.”
+            </p>
+            <img src="src/img/avaliação.png" alt="Estrelas de avaliação" />
+            <h3>Hayssa Silva</h3>
+            <p class="function">Cliente</p>
+          </div>
         </div>
       </section>
 
@@ -317,20 +401,26 @@
 
             <form action="">
               <div class="input-container">
-                <label for="myInput" class="input-label">Nome</label>
-                <input type="text" id="nome" class="input-field" />
+                <input type="text" id="nome" class="input-field" required />
+                <label for="nome" class="input-label"
+                  >Nome <span class="obrigatorio">*</span></label
+                >
               </div>
               <div class="input-container">
-                <label for="myInput" class="input-label">E-mail</label>
-                <input type="email" id="email" class="input-field" />
+                <input type="email" id="email" class="input-field" required />
+                <label for="email" class="input-label"
+                  >E-mail <span class="obrigatorio">*</span></label
+                >
               </div>
               <div class="input-container">
-                <label for="myInput" class="input-label">telefone</label>
-                <input type="tel" id="telefone" class="input-field" />
+                <input type="tel" id="telefone" class="input-field" required />
+                <label for="telefone" class="input-label"
+                  >telefone <span class="obrigatorio">*</span></label
+                >
               </div>
               <div class="input-container">
                 <select name="" id="">
-                  <option value="">Selecione</option>
+                  <option value="">Qual o assunto do contato?</option>
                   <option value="Agendamento">Agendamento</option>
                   <option value="Agendamento">Orçamento</option>
                   <option value="Agendamento">Localização</option>
@@ -343,15 +433,33 @@
             <div class="contatoFooter">
               <div class="contentFooter">
                 <i class="fa-brands fa-whatsapp"></i>
-                <a href="#">(81) 99999-9999</a>
+                <div class="controlFooter">
+                  <p>TELEFONE</p>
+                  <a href="#">(81) 99999-9999</a>
+                </div>
               </div>
+
               <div class="contentFooter">
                 <i class="fa-solid fa-envelope"></i>
-                <a href="#">exemplo@gmail.com</a>
+                <div class="controlFooter">
+                  <p>E-MAIL</p>
+                  <a href="#">exemplo@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="map"></div>
+          <div class="map">
+            <h2>Como chegar <i class="fa-solid fa-location-dot"></i></h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4677.400850539242!2d-35.69937276076224!3d-9.663123741944661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70144553e0d72fb%3A0x4981b736bf1ea83c!2sRitz%20Praia%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1702232967428!5m2!1spt-BR!2sbr"
+              width="1000"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
