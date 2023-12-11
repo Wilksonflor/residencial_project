@@ -240,11 +240,10 @@ header .navigation {
 
 .sobre p {
   font-family: var(--fontInter--);
-  font-size: clamp(1rem, 2vw, 1.12rem);
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 130%;
   text-align: justify;
-  width: 75%;
+  width: 100%;
   color: #fff;
 }
 
@@ -608,7 +607,7 @@ header .navigation {
 #btnEnviar {
   cursor: pointer;
   height: 50px;
-  width: 30%;
+  /* width: 30%; */
 
   margin-block: 10px;
   padding: 12px 24px;
@@ -783,8 +782,51 @@ header .navigation {
     width: 90%;
     padding: 12px 6px;
   }
+
+  .formAndMap {
+    flex-direction: column-reverse;
+  }
+
+  .containerForm {
+    border-top: 2px dashed #cdcdcd;
+    width: 100%;
+  }
+
+  .containerForm form {
+    width: 100%;
+  }
+  .containerForm h2 {
+    font-size: 1.5rem;
+  }
+  .containerForm p {
+    width: 90%;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .input-container input,
+  .input-container select {
+    width: 100%;
+  }
+  .contatoFooter {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .contentFooter {
+    width: 90%;
+    justify-content: center;
+    gap: 3px;
+  }
+  #btnEnviar {
+    width: 80%;
+  }
+  .map {
+    width: 90%;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 768px) {
   main {
     overflow-x: hidden;
   }
@@ -863,7 +905,7 @@ header .navigation {
 
   .containerSlideSpoiler {
     width: 100%;
-
+    max-width: 500px;
     flex-direction: column;
   }
   .boxImgSpoiler {
@@ -873,7 +915,7 @@ header .navigation {
   .boxImgSpoiler img {
     width: 100%;
     height: auto;
-    max-height: 50vh;
+    max-height: 30vh;
   }
 
   .textDepoimentos {
@@ -885,10 +927,7 @@ header .navigation {
   .containerDepo {
     justify-content: center;
   }
-  .inputControlDepoimentos {
-    /* border: solid blue; */
-    /* align-items: center; */
-  }
+
   .depoimentos .textClientes {
     width: 90%;
     text-align: justify;
@@ -902,9 +941,124 @@ header .navigation {
     margin-inline: 10px;
     padding: 12px 6px;
   }
+
+  .formAndMap {
+    flex-direction: column-reverse;
+  }
+
+  .containerForm {
+    /* border: solid black; */
+    border-top: 2px dashed #cdcdcd;
+    width: 100%;
+  }
+  .containerForm p {
+    width: 80%;
+  }
+  .input-container {
+    width: 80%;
+  }
+  .input-container input {
+    width: 100%;
+  }
+  .contatoFooter {
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .map {
+    width: 90%;
+  }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 769px) and (max-width: 1020px) {
+  .navigation.desktop {
+    display: none;
+  }
+  #btnMobile {
+    display: block;
+  }
+  .navigation.mobile a {
+    display: block;
+  }
+  header {
+    justify-content: space-around;
+  }
+
+  header .navigation {
+    width: 75%;
+  }
+
+  .introducao {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .introducao .boxInfoIntro {
+    margin-left: 30px;
+    width: 100%;
+  }
+  .introducao .containerPerson {
+    margin-left: 30px;
+    width: 80%;
+  }
+  .quemSomos .sobre {
+    width: 50%;
+    margin-inline: 20px;
+  }
+
+  .sobre h2 {
+    width: 100%;
+  }
+  .sobre p {
+    font-size: 1rem;
+  }
+  .containerImgSobre img {
+    height: 50vh;
+  }
+  .contentSlideInfo {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .containerSlides h2 {
+    width: 100%;
+  }
+  .containerBoxInfo {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .containerSlideSpoiler {
+    width: 70%;
+    flex-direction: column;
+  }
+  .boxImgSpoiler {
+    width: 65%;
+  }
+  .containerDepo {
+    justify-content: space-evenly;
+  }
+  .boxDepoimentos {
+    justify-content: space-evenly;
+    height: auto;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .boxDepoimentos img {
+    margin: 0;
+  }
+  .containerForm p {
+    width: 90%;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+  .contatoFooter {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .map {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
