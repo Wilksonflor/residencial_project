@@ -683,6 +683,17 @@ header .navigation {
   height: 50vh;
   /* object-fit: cover; */
 }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  background-color: var(--bggreen--);
+  font-family: var(--fontspace--);
+  color: #fff;
+}
 
 /* Responsivo */
 @media only screen and (max-width: 320px) {
