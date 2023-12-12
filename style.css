@@ -210,7 +210,7 @@ header .navigation {
 }
 
 .quemSomos .sobre {
-  width: 29%;
+  width: 40%;
   margin: 0 auto;
 
   display: flex;
@@ -256,7 +256,7 @@ header .navigation {
   justify-content: end;
 }
 .containerImgSobre img {
-  width: 100%;
+  width: 90%;
   height: 70vh;
   /* object-fit: cover; */
 }
@@ -976,9 +976,9 @@ footer {
   }
   .input-container {
     width: 100%;
-    border: solid red;
   }
-  .input-container input {
+  .input-container input,
+  .input-container select {
     width: 100%;
   }
   .contentFooter {
@@ -986,8 +986,8 @@ footer {
   }
   .contatoFooter {
     flex-direction: column;
-    width: 90%;
     align-items: center;
+    width: 90%;
     /* justify-content: space-evenly; */
   }
   .controlFooter {
