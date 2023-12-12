@@ -120,9 +120,12 @@ function nextDepoimento() {
   );
   mostrarDepoimentos();
 }
-
 mostrarDepoimentos();
 
+window.addEventListener("resize", () => {
+  depoimentosShow = window.innerWidth < 768 ? 1 : 3;
+  mostrarDepoimentos();
+});
 
 //
 

@@ -14,7 +14,6 @@
 }
 
 header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -25,9 +24,12 @@ header {
 header .navigation {
   margin-block: 20px;
   width: 50%;
+  max-width: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  /* gap: 40px; */
+  /* border: solid red; */
 }
 #btnMobile {
   cursor: pointer;
@@ -139,8 +141,7 @@ header .navigation {
 }
 
 .introducao .boxInfoIntro {
-  width: 22%;
-
+  width: 30%;
   margin: 0 auto;
 }
 
@@ -914,8 +915,8 @@ header .navigation {
   }
   .boxImgSpoiler img {
     width: 100%;
-    height: auto;
-    max-height: 30vh;
+    /* height: auto; */
+    /* max-height: 30vh; */
   }
 
   .textDepoimentos {
@@ -927,10 +928,14 @@ header .navigation {
   .containerDepo {
     justify-content: center;
   }
-
+  .inputControlDepoimentos {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
   .depoimentos .textClientes {
     width: 90%;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: normal;
   }
   .boxDepoimentos {
@@ -947,7 +952,6 @@ header .navigation {
   }
 
   .containerForm {
-    /* border: solid black; */
     border-top: 2px dashed #cdcdcd;
     width: 100%;
   }
@@ -960,10 +964,17 @@ header .navigation {
   .input-container input {
     width: 100%;
   }
+  .contentFooter {
+    width: 80%;
+  }
   .contatoFooter {
-    width: 100%;
+    width: 90%;
     align-items: center;
     justify-content: space-evenly;
+  }
+  .controlFooter {
+    width: 100%;
+    margin-left: 10px;
   }
   .map {
     width: 90%;
@@ -976,12 +987,14 @@ header .navigation {
   }
   #btnMobile {
     display: block;
+    margin-top: 0;
   }
   .navigation.mobile a {
     display: block;
   }
   header {
     justify-content: space-around;
+    padding-block: 20px;
   }
 
   header .navigation {
@@ -1038,6 +1051,7 @@ header .navigation {
   .boxDepoimentos {
     justify-content: space-evenly;
     height: auto;
+    max-height: 200px;
     max-width: 250px;
     padding: 15px;
     border-radius: 10px;
@@ -1052,6 +1066,7 @@ header .navigation {
   .input-container {
     width: 100%;
   }
+
   .contatoFooter {
     width: 100%;
     justify-content: space-around;
@@ -1061,5 +1076,91 @@ header .navigation {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 1021px) and (max-width: 1380px) {
+  .navigation.desktop {
+    width: 70%;
+    justify-content: space-evenly;
+  }
+  .introducao .boxInfoIntro {
+    width: 40%;
+  }
+
+  .quemSomos .sobre {
+    width: 45%;
+  }
+  .sobre p {
+    font-size: 1rem;
+    text-align: unset;
+  }
+  .containerSlideSpoiler {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .containerDepo {
+    justify-content: space-evenly;
+  }
+  .depoimentos .textClientes {
+    line-height: normal;
+  }
+  .inputControlDepoimentos {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .containerForm p {
+    width: 100%;
+    padding-inline: 20px;
+  }
+  .input-container {
+    width: 100%;
+  }
+  .contentFooter {
+    width: 50%;
+    justify-content: center;
+    gap: 5px;
+  }
+  .contatoFooter {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1381px) and (max-width: 1420px) {
+  header {
+    justify-content: space-between;
+    padding-inline: 10px;
+  }
+  .navigation.desktop {
+    width: 70%;
+  }
+  .introducao .boxInfoIntro {
+    width: 40%;
+  }
+  .quemSomos .sobre {
+    width: 40%;
+  }
+  .containerSlides h2 {
+    width: 100%;
+  }
+  .containerForm p {
+    width: 80%;
+  }
+  .input-container {
+    width: 80%;
+  }
+  .contatoFooter {
+    width: 80%;
+  }
+  .contentFooter {
+    width: 100%;
+  }
+  .controlFooter {
+    margin-left: 10px;
+    width: 100%;
+    border: slid yellow;
+  }
 }
