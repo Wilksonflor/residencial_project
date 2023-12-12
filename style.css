@@ -22,7 +22,7 @@ header {
   position: relative;
 }
 
-header .navigation {
+.navigation.desktop {
   margin-block: 20px;
   width: 50%;
   max-width: 80%;
@@ -51,13 +51,13 @@ header .navigation {
 .navigation.mobile {
   display: none;
   position: absolute;
-  top: 42px;
+  top: 80px;
+  /* left: 50px; */
   width: 100%;
   height: 50vh;
   background-color: var(--bggreen--);
 }
 .navigation.mobile ul {
-  /* display: flex; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -858,9 +858,9 @@ footer {
   #btnMobile {
     display: block;
   }
-  .navigation.mobile {
-    top: 60px;
-  }
+  /* .navigation.mobile {
+    top: 61px;
+  } */
   .navigation.mobile a {
     display: block;
   }
@@ -1022,9 +1022,11 @@ footer {
     padding-block: 20px;
   }
 
-  header .navigation {
-    width: 75%;
-  }
+  /* header .navigation.mobile {
+    width: 100%;
+    top: 70px;
+
+  } */
 
   .introducao {
     flex-wrap: wrap;
@@ -1061,14 +1063,8 @@ footer {
   .containerSlides h2 {
     width: 100%;
   }
-  .btnSlideInfoFinal,
-  .btnSlideInfoInicio {
-  }
   .containerBoxInfo {
-    /* width: 100%; */
     margin: 20px auto;
-    /* gap: 10px; */
-    /* flex-direction: column; */
   }
   .containerSlideSpoiler {
     width: 70%;
@@ -1102,6 +1098,12 @@ footer {
   .contatoFooter {
     width: 100%;
     justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  .contentFooter {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
   .map {
     width: 45%;
