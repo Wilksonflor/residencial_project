@@ -947,7 +947,7 @@ footer {
   .inputControlDepoimentos {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .depoimentos .textClientes {
     width: 90%;
