@@ -244,7 +244,7 @@ header .navigation {
   font-family: var(--fontInter--);
   font-size: 1.1rem;
   font-weight: 400;
-  text-align: justify;
+  text-align: unset;
   width: 100%;
   color: #fff;
 }
@@ -333,6 +333,8 @@ header .navigation {
 
 .boxInfo img {
   width: 25%;
+  min-width: 50px;
+  max-height: 50px;
 }
 
 .boxInfo .icon {
@@ -354,7 +356,7 @@ header .navigation {
   height: 40px;
   border-radius: 50%;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -628,7 +630,7 @@ header .navigation {
 }
 
 .contatoFooter {
-  width: 50%;
+  /* width: 50%; */
 
   display: flex;
   /* align-items: center;
@@ -641,10 +643,12 @@ header .navigation {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 30%;
+  /* width: 30%; */
 }
+
 .contentFooter i {
   font-size: 2rem;
+  margin-inline: 4px;
 }
 .fa-whatsapp {
   color: green;
@@ -971,7 +975,8 @@ footer {
     width: 80%;
   }
   .input-container {
-    width: 80%;
+    width: 100%;
+    border: solid red;
   }
   .input-container input {
     width: 100%;
@@ -980,9 +985,10 @@ footer {
     width: 80%;
   }
   .contatoFooter {
+    flex-direction: column;
     width: 90%;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   }
   .controlFooter {
     width: 100%;
@@ -990,6 +996,13 @@ footer {
   }
   .map {
     width: 90%;
+  }
+  footer {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  footer p {
+    font-size: 15px;
   }
 }
 
@@ -1035,20 +1048,27 @@ footer {
   }
   .sobre p {
     font-size: 1rem;
+    text-align: left;
   }
+
   .containerImgSobre img {
     height: 50vh;
   }
   .contentSlideInfo {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
   }
   .containerSlides h2 {
     width: 100%;
   }
+  .btnSlideInfoFinal,
+  .btnSlideInfoInicio {
+  }
   .containerBoxInfo {
-    width: 100%;
+    /* width: 100%; */
     margin: 20px auto;
+    /* gap: 10px; */
+    /* flex-direction: column; */
   }
   .containerSlideSpoiler {
     width: 70%;
